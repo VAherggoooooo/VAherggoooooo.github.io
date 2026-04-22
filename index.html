@@ -11,180 +11,311 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="sky-layer" aria-hidden="true">
-    <span class="planet"></span>
-    <span class="aurora aurora-one"></span>
-    <span class="aurora aurora-two"></span>
-    <span class="stars stars-a"></span>
-    <span class="stars stars-b"></span>
-  </div>
+  <div class="ambient" aria-hidden="true"></div>
 
   <div class="page-wrap">
     <div class="dashboard">
       <aside class="sidebar">
-        <div class="brand-block">
-          <div class="brand-mark">VA</div>
-          <div>
-            <p class="brand-kicker">GitHub Pages</p>
-            <h1>VAherggoooooo</h1>
+        <div>
+          <div class="window-dots" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
-        </div>
 
-        <nav class="menu" aria-label="站点导航">
-          <a class="menu-item active" href="#overview">主页状态</a>
-          <a class="menu-item" href="#timeline">更新日志</a>
-          <a class="menu-item" href="#repo">仓库概览</a>
-          <a class="menu-item" href="#next">下一步</a>
-        </nav>
+          <div class="brand-block">
+            <div class="brand-mark">VA</div>
+            <div>
+              <p class="brand-kicker">GitHub Pages</p>
+              <h1>VAherggoooooo</h1>
+            </div>
+          </div>
+
+          <nav class="menu" aria-label="站点导航">
+            <a class="menu-item active" href="#overview">Dashboard</a>
+            <a class="menu-item" href="#graph">Updates</a>
+            <a class="menu-item" href="#board">Repos</a>
+            <a class="menu-item" href="#chat">Notes</a>
+          </nav>
+        </div>
 
         <div class="sidebar-note">
           <p class="note-label">当前定位</p>
-          <p class="note-value">个人主页首版已经搭好，接下来逐步补内容。</p>
+          <p class="note-value">保留毛玻璃界面，主页继续朝更完整的个人站点扩展。</p>
         </div>
       </aside>
 
-      <main class="main-panel">
-        <header class="topbar">
-          <div class="breadcrumbs">
-            <span>Home</span>
-            <span>/</span>
-            <span>GitHub Pages</span>
-            <span>/</span>
-            <span>Homepage</span>
-          </div>
-          <div class="status-pills">
-            <span class="pill">Live Layout</span>
-            <span class="pill">Static Site</span>
-          </div>
-        </header>
-
-        <section class="hero" id="overview">
-          <div class="hero-copy">
-            <p class="eyebrow">Personal site status</p>
-            <h2>主页已经上线，接下来把仓库慢慢铺开。</h2>
-            <p class="summary">
-              这个页面现在作为我的 GitHub 个人主页首版，先完成蓝色渐变视觉和静态站点框架，
-              后续会继续补充项目、笔记、学习记录和个人介绍。
-            </p>
-
-            <div class="tag-row" aria-label="站点标签">
-              <span class="tag">GitHub Pages</span>
-              <span class="tag">蓝色渐变</span>
-              <span class="tag">静态首页</span>
-              <span class="tag">持续更新中</span>
+      <main class="workspace">
+        <section class="center-panel">
+          <header class="topbar">
+            <div class="search-box">Try here to start searching</div>
+            <div class="top-actions">
+              <span class="chip">5 Jul, 2025</span>
+              <span class="chip">7 Jan, 2026</span>
+              <span class="icon-chip">+</span>
             </div>
-          </div>
+          </header>
 
-          <div class="hero-side card glow-card">
-            <p class="card-title">今日状态</p>
-            <p class="focus-text">首页结构完成，可继续往里填内容。</p>
-            <div class="mini-metrics">
-              <div>
-                <span class="metric-label">发布形态</span>
-                <strong>Root / main</strong>
-              </div>
-              <div>
-                <span class="metric-label">页面入口</span>
-                <strong>index.html</strong>
+          <section class="hero-card glass-card" id="overview">
+            <div class="hero-copy">
+              <p class="eyebrow">GitHub Profile</p>
+              <h2>VAherggoooooo</h2>
+              <p class="summary">
+                这里展示的是我的 GitHub 首页和当前公开仓库。下面的仓库卡片都可以直接点击，
+                跳转到对应的 GitHub 项目页面。
+              </p>
+
+              <a class="repo-url" href="https://github.com/VAherggoooooo" target="_blank" rel="noreferrer">
+                https://github.com/VAherggoooooo
+              </a>
+
+              <div class="repo-actions">
+                <a class="repo-link-button primary-link" href="https://github.com/VAherggoooooo" target="_blank" rel="noreferrer">
+                  打开 GitHub 首页
+                </a>
+                <a class="repo-link-button" href="https://vaherggoooooo.github.io/" target="_blank" rel="noreferrer">
+                  打开个人主页
+                </a>
               </div>
             </div>
-          </div>
+
+            <div class="hero-stats">
+              <div class="stat-card">
+                <span class="metric-label">公开仓库</span>
+                <strong>14</strong>
+              </div>
+              <div class="stat-card">
+                <span class="metric-label">GitHub 首页</span>
+                <strong>VAherggoooooo</strong>
+              </div>
+              <div class="stat-card">
+                <span class="metric-label">主页地址</span>
+                <strong>vaherggoooooo.github.io</strong>
+              </div>
+            </div>
+          </section>
+
+          <section class="graph-card glass-card" id="graph">
+            <div class="section-heading">
+              <div>
+                <p class="card-title">Public Repositories</p>
+                <p class="card-subtitle">点击下面任意仓库卡片可以直接跳转到对应 GitHub 仓库</p>
+              </div>
+              <span class="muted-chip">Live</span>
+            </div>
+
+            <div class="repo-showcase-grid">
+              <a class="repo-showcase-card" href="https://github.com/VAherggoooooo/VAherggoooooo.github.io" target="_blank" rel="noreferrer">
+                <span class="metric-label">CSS</span>
+                <h3>VAherggoooooo.github.io</h3>
+                <p>GitHub Pages 个人主页仓库。</p>
+              </a>
+
+              <a class="repo-showcase-card" href="https://github.com/VAherggoooooo/TheTPSDemo" target="_blank" rel="noreferrer">
+                <span class="metric-label">C++</span>
+                <h3>TheTPSDemo</h3>
+                <p>第三人称项目 Demo 仓库。</p>
+              </a>
+
+              <a class="repo-showcase-card" href="https://github.com/VAherggoooooo/AnimAssetTool" target="_blank" rel="noreferrer">
+                <span class="metric-label">C++</span>
+                <h3>AnimAssetTool</h3>
+                <p>AnimAssetTool For UE4。</p>
+              </a>
+
+              <a class="repo-showcase-card" href="https://github.com/VAherggoooooo/AO_Project" target="_blank" rel="noreferrer">
+                <span class="metric-label">ShaderLab</span>
+                <h3>AO_Project</h3>
+                <p>AO_Project 图形相关实验仓库。</p>
+              </a>
+
+              <a class="repo-showcase-card" href="https://github.com/VAherggoooooo/TAA_URP" target="_blank" rel="noreferrer">
+                <span class="metric-label">C#</span>
+                <h3>TAA_URP</h3>
+                <p>TAA Unity URP Project。</p>
+              </a>
+
+              <a class="repo-showcase-card" href="https://github.com/VAherggoooooo/GPUGrass" target="_blank" rel="noreferrer">
+                <span class="metric-label">C#</span>
+                <h3>GPUGrass</h3>
+                <p>GPU 草地渲染相关项目。</p>
+              </a>
+
+              <a class="repo-showcase-card" href="https://github.com/VAherggoooooo/Unity-Tool" target="_blank" rel="noreferrer">
+                <span class="metric-label">Repo</span>
+                <h3>Unity-Tool</h3>
+                <p>Unity 工具集合仓库。</p>
+              </a>
+
+              <a class="repo-showcase-card" href="https://github.com/VAherggoooooo/NS_demo" target="_blank" rel="noreferrer">
+                <span class="metric-label">C#</span>
+                <h3>NS_demo</h3>
+                <p>NS_demo 示例项目。</p>
+              </a>
+
+              <a class="repo-showcase-card" href="https://github.com/VAherggoooooo/SimpleCable" target="_blank" rel="noreferrer">
+                <span class="metric-label">C++</span>
+                <h3>SimpleCable</h3>
+                <p>Verlet Cable in UE5.4。</p>
+              </a>
+
+              <a class="repo-showcase-card" href="https://github.com/VAherggoooooo/SGLighting" target="_blank" rel="noreferrer">
+                <span class="metric-label">C++</span>
+                <h3>SGLighting</h3>
+                <p>光照与图形实验相关仓库。</p>
+              </a>
+
+              <a class="repo-showcase-card" href="https://github.com/VAherggoooooo/Ray_EditorTool" target="_blank" rel="noreferrer">
+                <span class="metric-label">C++</span>
+                <h3>Ray_EditorTool</h3>
+                <p>UE5 Editor Tool Example。</p>
+              </a>
+
+              <a class="repo-showcase-card" href="https://github.com/VAherggoooooo/ExcelReader" target="_blank" rel="noreferrer">
+                <span class="metric-label">C#</span>
+                <h3>ExcelReader</h3>
+                <p>ExcelReader 数据读取工具。</p>
+              </a>
+
+              <a class="repo-showcase-card" href="https://github.com/VAherggoooooo/RayTracing_in_One_Weekend" target="_blank" rel="noreferrer">
+                <span class="metric-label">C++</span>
+                <h3>RayTracing_in_One_Weekend</h3>
+                <p>Ray Tracing 学习与实现项目。</p>
+              </a>
+
+              <a class="repo-showcase-card" href="https://github.com/VAherggoooooo/Unity-Shader" target="_blank" rel="noreferrer">
+                <span class="metric-label">Shader</span>
+                <h3>Unity-Shader</h3>
+                <p>Unity Shader 相关实验仓库。</p>
+              </a>
+            </div>
+          </section>
+
+          <section class="board-card glass-card" id="board">
+            <div class="section-heading">
+              <div>
+                <p class="card-title">Quick Access</p>
+                <p class="card-subtitle">这里保留几个最常用的 GitHub 入口</p>
+              </div>
+              <span class="muted-chip">Repo</span>
+            </div>
+
+            <div class="task-board">
+              <section class="task-column">
+                <div class="column-head">
+                  <span>Source</span>
+                  <span>01</span>
+                </div>
+                <article class="task-card accent-orange">
+                  <span class="task-badge">Profile</span>
+                  <h3>GitHub 首页</h3>
+                  <p>查看完整公开仓库列表、个人资料和后续更新入口。</p>
+                  <div class="task-meta">
+                    <span>github.com</span>
+                    <span>profile</span>
+                  </div>
+                </article>
+              </section>
+
+              <section class="task-column">
+                <div class="column-head">
+                  <span>Deploy</span>
+                  <span>02</span>
+                </div>
+                <article class="task-card accent-purple">
+                  <span class="task-badge">Pages</span>
+                  <h3>个人主页站点</h3>
+                  <p>当前这个 GitHub Pages 地址会展示最新首页内容。</p>
+                  <div class="task-meta">
+                    <span>vaherggoooooo.github.io</span>
+                    <span>live</span>
+                  </div>
+                </article>
+              </section>
+
+              <section class="task-column">
+                <div class="column-head">
+                  <span>Status</span>
+                  <span>03</span>
+                </div>
+                <article class="task-card accent-blue">
+                  <span class="task-badge">Pinned</span>
+                  <h3>主页仓库入口</h3>
+                  <p>快速进入 `VAherggoooooo.github.io` 仓库继续维护页面源码。</p>
+                  <div class="task-meta">
+                    <span>repository</span>
+                    <span>pages</span>
+                  </div>
+                </article>
+              </section>
+            </div>
+          </section>
         </section>
 
-        <section class="content-grid">
-          <article class="card large-card" id="timeline">
-            <div class="section-heading">
-              <p class="card-title">首页更新日志</p>
-              <span class="muted-chip">Recent</span>
+        <aside class="right-panel glass-card" id="chat">
+          <div class="section-heading right-heading">
+            <div>
+              <p class="card-title">Homepage Feed</p>
+              <p class="card-subtitle">最近这版首页在做什么</p>
             </div>
-
-            <div class="timeline">
-              <div class="timeline-item active">
-                <span class="timeline-dot"></span>
-                <div>
-                  <h3>首版页面已生成</h3>
-                  <p>完成首页入口文件与样式文件，当前可直接作为 GitHub Pages 静态页面使用。</p>
-                </div>
-              </div>
-
-              <div class="timeline-item">
-                <span class="timeline-dot"></span>
-                <div>
-                  <h3>视觉风格切换到蓝色科幻面板</h3>
-                  <p>参考仪表盘式界面，加入蓝色渐变、星空背景、玻璃质感和发光卡片。</p>
-                </div>
-              </div>
-
-              <div class="timeline-item">
-                <span class="timeline-dot"></span>
-                <div>
-                  <h3>文案开始替换为个人主页内容</h3>
-                  <p>首页不再只是空白占位，先记录主页状态、仓库概览和接下来的更新方向。</p>
-                </div>
-              </div>
+            <div class="tiny-icons" aria-hidden="true">
+              <span></span>
+              <span></span>
             </div>
-          </article>
+          </div>
 
-          <article class="card side-card" id="repo">
-            <div class="section-heading">
-              <p class="card-title">仓库概览</p>
-              <span class="muted-chip">Now</span>
-            </div>
+          <div class="chat-list">
+            <article class="chat-item">
+              <div class="avatar">G</div>
+              <div class="chat-bubble">
+                <div class="chat-meta">
+                  <strong>GitHub Pages</strong>
+                  <span>19 mins</span>
+                </div>
+                <p>主页仓库已经可用，当前重点从“能打开”转向“更像正式首页”。</p>
+              </div>
+            </article>
 
-            <div class="repo-stack">
-              <div class="repo-row">
-                <span>仓库名称</span>
+            <article class="chat-item self">
+              <div class="chat-bubble">
+                <div class="chat-meta">
+                  <strong>You</strong>
+                  <span>Now</span>
+                </div>
+                <p>保留毛玻璃，但排版和背景换成更干净的深色仪表盘风格。</p>
+              </div>
+            </article>
+
+            <article class="chat-item">
+              <div class="avatar">R</div>
+              <div class="chat-bubble highlight-bubble">
+                <div class="chat-meta">
+                  <strong>Repository</strong>
+                  <span>8:32 AM</span>
+                </div>
+                <p>当前仓库结构很轻：`index.html` + `styles.css`，适合继续快速迭代。</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="side-card-block">
+            <p class="card-title">Repo Snapshot</p>
+            <div class="repo-pairs">
+              <div>
+                <span class="metric-label">仓库名称</span>
                 <strong>VAherggoooooo.github.io</strong>
               </div>
-              <div class="repo-row">
-                <span>当前结构</span>
-                <strong>index.html / styles.css</strong>
-              </div>
-              <div class="repo-row">
-                <span>部署方式</span>
+              <div>
+                <span class="metric-label">部署方式</span>
                 <strong>GitHub Pages</strong>
               </div>
-              <div class="repo-row">
-                <span>页面定位</span>
-                <strong>个人主页首页</strong>
+              <div>
+                <span class="metric-label">更新方向</span>
+                <strong>个人主页持续完善</strong>
               </div>
             </div>
-          </article>
-
-          <article class="card progress-card">
-            <div class="section-heading">
-              <p class="card-title">主页建设进度</p>
-              <span class="muted-chip">Phase 1</span>
-            </div>
-
-            <div class="progress-line">
-              <span class="progress-bar"></span>
-            </div>
-
-            <div class="progress-meta">
-              <span>视觉框架</span>
-              <strong>70%</strong>
-            </div>
-
-            <p class="card-copy">
-              基础布局、背景氛围和信息模块已经成型，后续重点会放在内容填充和项目整理。
-            </p>
-          </article>
-
-          <article class="card notes-card" id="next">
-            <div class="section-heading">
-              <p class="card-title">接下来准备补的内容</p>
-              <span class="muted-chip">Queue</span>
-            </div>
-
-            <ul class="task-list">
-              <li>补上个人简介、头像和联系入口</li>
-              <li>整理常用仓库与近期项目展示区</li>
-              <li>增加学习笔记或更新记录页面入口</li>
-              <li>根据实际内容继续微调导航和信息层级</li>
-            </ul>
-          </article>
-        </section>
+          </div>
+        </aside>
       </main>
     </div>
   </div>
