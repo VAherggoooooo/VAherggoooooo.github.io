@@ -1,54 +1,192 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Personal Homepage</title>
-  <meta name="description" content="A simple personal homepage placeholder.">
+  <title>VAherggoooooo | GitHub Homepage</title>
+  <meta name="description" content="VAherggoooooo 的 GitHub 主页，记录首页更新进度与仓库状态。">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="site-shell">
-    <header class="hero">
-      <nav class="topbar" aria-label="Primary">
-        <span class="brand">VA</span>
-        <div class="nav-line" aria-hidden="true"></div>
-      </nav>
+  <div class="sky-layer" aria-hidden="true">
+    <span class="planet"></span>
+    <span class="aurora aurora-one"></span>
+    <span class="aurora aurora-two"></span>
+    <span class="stars stars-a"></span>
+    <span class="stars stars-b"></span>
+  </div>
 
-      <div class="hero-copy">
-        <p class="eyebrow">Personal Homepage</p>
-        <h1>Reserved for future content.</h1>
-        <p class="summary">
-          This page is live and ready. You can fill in your profile, projects, notes, or contact
-          details later.
-        </p>
-      </div>
-    </header>
+  <div class="page-wrap">
+    <div class="dashboard">
+      <aside class="sidebar">
+        <div class="brand-block">
+          <div class="brand-mark">VA</div>
+          <div>
+            <p class="brand-kicker">GitHub Pages</p>
+            <h1>VAherggoooooo</h1>
+          </div>
+        </div>
 
-    <main class="content-grid">
-      <section class="panel panel-large" aria-label="Introduction placeholder">
-        <div class="panel-label">01</div>
-        <div class="panel-body"></div>
-      </section>
+        <nav class="menu" aria-label="站点导航">
+          <a class="menu-item active" href="#overview">主页状态</a>
+          <a class="menu-item" href="#timeline">更新日志</a>
+          <a class="menu-item" href="#repo">仓库概览</a>
+          <a class="menu-item" href="#next">下一步</a>
+        </nav>
 
-      <section class="panel" aria-label="Projects placeholder">
-        <div class="panel-label">02</div>
-        <div class="panel-body"></div>
-      </section>
+        <div class="sidebar-note">
+          <p class="note-label">当前定位</p>
+          <p class="note-value">个人主页首版已经搭好，接下来逐步补内容。</p>
+        </div>
+      </aside>
 
-      <section class="panel" aria-label="Writing placeholder">
-        <div class="panel-label">03</div>
-        <div class="panel-body"></div>
-      </section>
+      <main class="main-panel">
+        <header class="topbar">
+          <div class="breadcrumbs">
+            <span>Home</span>
+            <span>/</span>
+            <span>GitHub Pages</span>
+            <span>/</span>
+            <span>Homepage</span>
+          </div>
+          <div class="status-pills">
+            <span class="pill">Live Layout</span>
+            <span class="pill">Static Site</span>
+          </div>
+        </header>
 
-      <section class="panel panel-wide" aria-label="Contact placeholder">
-        <div class="panel-label">04</div>
-        <div class="panel-body"></div>
-      </section>
-    </main>
+        <section class="hero" id="overview">
+          <div class="hero-copy">
+            <p class="eyebrow">Personal site status</p>
+            <h2>主页已经上线，接下来把仓库慢慢铺开。</h2>
+            <p class="summary">
+              这个页面现在作为我的 GitHub 个人主页首版，先完成蓝色渐变视觉和静态站点框架，
+              后续会继续补充项目、笔记、学习记录和个人介绍。
+            </p>
+
+            <div class="tag-row" aria-label="站点标签">
+              <span class="tag">GitHub Pages</span>
+              <span class="tag">蓝色渐变</span>
+              <span class="tag">静态首页</span>
+              <span class="tag">持续更新中</span>
+            </div>
+          </div>
+
+          <div class="hero-side card glow-card">
+            <p class="card-title">今日状态</p>
+            <p class="focus-text">首页结构完成，可继续往里填内容。</p>
+            <div class="mini-metrics">
+              <div>
+                <span class="metric-label">发布形态</span>
+                <strong>Root / main</strong>
+              </div>
+              <div>
+                <span class="metric-label">页面入口</span>
+                <strong>index.html</strong>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-grid">
+          <article class="card large-card" id="timeline">
+            <div class="section-heading">
+              <p class="card-title">首页更新日志</p>
+              <span class="muted-chip">Recent</span>
+            </div>
+
+            <div class="timeline">
+              <div class="timeline-item active">
+                <span class="timeline-dot"></span>
+                <div>
+                  <h3>首版页面已生成</h3>
+                  <p>完成首页入口文件与样式文件，当前可直接作为 GitHub Pages 静态页面使用。</p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <span class="timeline-dot"></span>
+                <div>
+                  <h3>视觉风格切换到蓝色科幻面板</h3>
+                  <p>参考仪表盘式界面，加入蓝色渐变、星空背景、玻璃质感和发光卡片。</p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <span class="timeline-dot"></span>
+                <div>
+                  <h3>文案开始替换为个人主页内容</h3>
+                  <p>首页不再只是空白占位，先记录主页状态、仓库概览和接下来的更新方向。</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="card side-card" id="repo">
+            <div class="section-heading">
+              <p class="card-title">仓库概览</p>
+              <span class="muted-chip">Now</span>
+            </div>
+
+            <div class="repo-stack">
+              <div class="repo-row">
+                <span>仓库名称</span>
+                <strong>VAherggoooooo.github.io</strong>
+              </div>
+              <div class="repo-row">
+                <span>当前结构</span>
+                <strong>index.html / styles.css</strong>
+              </div>
+              <div class="repo-row">
+                <span>部署方式</span>
+                <strong>GitHub Pages</strong>
+              </div>
+              <div class="repo-row">
+                <span>页面定位</span>
+                <strong>个人主页首页</strong>
+              </div>
+            </div>
+          </article>
+
+          <article class="card progress-card">
+            <div class="section-heading">
+              <p class="card-title">主页建设进度</p>
+              <span class="muted-chip">Phase 1</span>
+            </div>
+
+            <div class="progress-line">
+              <span class="progress-bar"></span>
+            </div>
+
+            <div class="progress-meta">
+              <span>视觉框架</span>
+              <strong>70%</strong>
+            </div>
+
+            <p class="card-copy">
+              基础布局、背景氛围和信息模块已经成型，后续重点会放在内容填充和项目整理。
+            </p>
+          </article>
+
+          <article class="card notes-card" id="next">
+            <div class="section-heading">
+              <p class="card-title">接下来准备补的内容</p>
+              <span class="muted-chip">Queue</span>
+            </div>
+
+            <ul class="task-list">
+              <li>补上个人简介、头像和联系入口</li>
+              <li>整理常用仓库与近期项目展示区</li>
+              <li>增加学习笔记或更新记录页面入口</li>
+              <li>根据实际内容继续微调导航和信息层级</li>
+            </ul>
+          </article>
+        </section>
+      </main>
+    </div>
   </div>
 </body>
 </html>
